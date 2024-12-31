@@ -19,8 +19,8 @@ jobs:
         image: postgres
         env:
           POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: mysecretpassword
-          POSTGRES_DB: forumapi_test
+          POSTGRES_PASSWORD: supersecret
+          POSTGRES_DB: authapi_test
 
         options: >-
           --health-cmd pg_isready
@@ -48,8 +48,8 @@ jobs:
           PGHOST: localhost
           PGPORT: 5432
           PGUSER: postgres
-          PGPASSWORD: mysecretpassword
-          PGDATABASE: forumapi_test
+          PGPASSWORD: supersecret
+          PGDATABASE: authapi_test
           ACCESS_TOKEN_KEY: secret
           REFRESH_TOKEN_KEY: terces
           ACCESS_TOKEN_AGE: 3600
